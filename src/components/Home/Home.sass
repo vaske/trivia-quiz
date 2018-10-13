@@ -1,0 +1,29 @@
+
+@import '~view/sass/theme/variables'
+
+.start-page-content
+    margin-top: 10px
+    margin-bottom: 90px
+
+.play-button
+  box-sizing: border-box
+  margin-top: 70px
+  background: $triviared
+  color: $white
+  text-transform: uppercase
+  font-size: 25px
+  border: none
+  width: 260px
+  height: 260px
+  line-height: 260px
+  border-radius: 260px
+  cursor: pointer
+  -moz-transition: 0.15s all
+  -o-transition: 0.15s all
+  -webkit-transition: 0.15s all
+  transition: 0.15s all
+  &:hover
+    transform: scale(1.1)
+  &:disabled
+    opacity: 0.7
+    cursor: not-allowed
