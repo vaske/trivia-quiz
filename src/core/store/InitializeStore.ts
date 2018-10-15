@@ -18,9 +18,7 @@ const persistConfig = {
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer);
-// const storeMiddleware = applyMiddleware(epicMiddleware, logger);
 const storeMiddleware = applyMiddleware(epicMiddleware, thunk, logger);
-// const storeMiddleware = applyMiddleware(epicMiddleware);
 
 export const store = createStore(
     persistedReducer,
